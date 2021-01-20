@@ -467,34 +467,6 @@ function dynamicCellWidth() {
         subGrowthTitle[i].style.left = `${position}px`
         subGrowthTitle[i].style.width = `${headerWith[i]}px`
         position += headerWith[i] + headerAdditionalWidth[i]
-
-        
-    }
-
-
-    thresholds = document.getElementsByTagName("threshold");
-    thresholdsCount = thresholds.length;
-    ICONWIDTH = 60;
-
-    for (i = 0; i < thresholdsCount; i++){
-        icon = thresholds[i].getElementsByTagName("icon");
-
-        iconCount = icon.length;
-
-        dynamicThresholdWidth = 
-            (iconCount * ICONWIDTH) + (iconCount * 12);
-        formattedWidth = dynamicThresholdWidth + "px";
-        thresholds[i].style.width = formattedWidth;
-    }
-    var description = document.getElementsByClassName("description");
-    for(i = 0; i < description.length; i++){
-        
-        var textWidth = description[i].clientHeight;
-        console.log(textWidth);
-        //Get the icon width and add it to length
-        if (textWidth < 50){
-            description[i].id = "single-line";
-        }
     }
 }
 

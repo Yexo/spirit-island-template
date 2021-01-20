@@ -154,30 +154,40 @@ description-container {
   height: 325px;
   display:block;
   margin-top:10px;
+  display: flex;
+  flex-direction: column;
 }
 
 note {
-  display: inline-block;
   height: auto;
-  width: 487px;
+  width: 100%;
   font-family: 'JosefinSans-Regular';
   font-size: 15pt;
 }
 
 level {
-  display: inline-block;
+  display: table;
   height: auto;
-  width: 487px;
+  width: 100%;
   font-family: 'JosefinSans-Regular';
   font-size: 17pt;
-  padding-bottom: 20px;
 }
 
 threshold {
   font-family: 'Gobold Extra2';
   font-size: 24pt;
   color: #431E0AFF;
-  float: left;
+  height: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  white-space:nowrap;
+  padding-right: 10px;
+}
+
+level .description {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
 }
 
 innate-info-range icon.range-0, innate-info-range icon.range-1, innate-info-range icon.range-2, 

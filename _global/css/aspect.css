@@ -105,10 +105,6 @@ aspect-container innate-power:only-child note {
   width: 100% !important;
 }
 
-aspect-container level .description {
-  padding-top: 13px;
-}
-
 aspect-back{
   width: 682px;
   height: 488px;
